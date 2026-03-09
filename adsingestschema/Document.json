@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/seasidesparrow/ingest_data_model/refs/tags/v1.1.0r/adsingestschema/Document.json",
+  "$id": "https://raw.githubusercontent.com/seasidesparrow/ingest_data_model/refs/tags/v1.1.0x/adsingestschema/Document.json",
   "title": "Document",
   "description": "Data schema for importing metadata into ADS pipeline",
   "type": "object",
@@ -74,17 +74,9 @@
       }
     },
     "abstract": {
-      "type": "object",
-      "properties": {
-        "textEnglish": {
-          "type": "string"
-        },
-        "textNative": {
-          "type": "string"
-        },
-        "langNative": {
-          "type": "string"
-        }
+      "type": "array",
+      "items": {
+        "$ref": "./Abstract.json"
       }
     },
     "comments": {
