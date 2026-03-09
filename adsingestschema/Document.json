@@ -55,6 +55,10 @@
         "$ref": "./OtherContrib.json"
       }
     },
+    "language": {
+      "type": "string",
+      "description": "ISO-8859 country code of document language declaration"
+    },
     "title": {
       "type": "array",
       "description": "Array of Title.json objects for multilingual support",

@@ -1,22 +1,19 @@
 {
   "title": "Title",
-  "description": "Holds the title data, including multiple language fields, and a list to hold any notes/xrefs provided by the publisher",
+  "description": "Holds the title data, including both text and language; for cases of native/english/translated titles, you can represent these with an array of Title objects.",
   "type": "object",
   "properties": {
-    "textEnglish": {
+    "atext": {
       "type": "string"
     },
-    "textNative": {
+    "language": {
       "type": "string"
     },
-    "langNative": {
-      "type": "string"
-    },
-    "textNotes": {
+    "footnotes": {
       "type": "array",
-      "description": "Footnotes and xrefs associated with title(s)",
+      "description": "Array of Footnote.json objects",
       "items": {
-        "type": "string"
+        "$ref": "./Footnote.json"
       }
     }
   }
