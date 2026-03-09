@@ -57,7 +57,7 @@
     },
     "language": {
       "type": "string",
-      "description": "ISO-8859 country code of document language declaration"
+      "description": "ISO-639-1 country code of document language declaration"
     },
     "title": {
       "type": "array",
